@@ -5,7 +5,7 @@ import ToDo from './ToDo';
 
 const Home = () => {
     return (
-        <div className='px-12'>
+        <div>
            <Tasks></Tasks>
 
         </div>
