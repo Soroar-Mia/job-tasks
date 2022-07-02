@@ -4,6 +4,12 @@ import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
 
 const Tasks = () => {
+
+
+//  document.getElementById('btn').addEventListener('click',function(){
+//    document.getElementById('task').style.display = 'none';
+//  });
+
   const [date, setDate] = useState(new Date());
   return (
     <div>
@@ -24,14 +30,14 @@ const Tasks = () => {
           </div>
           <div class="card flex-shrink-0 w-full text-center max-w-sm shadow-2xl bg-base-100">
             <div class="card-body">
-              <h1 class="text-2xl  text-primary font-bold">ADD TASKS</h1>
+              <h1 class="text-2xl pb-3 text-primary font-bold">ADD TASKS</h1>
               <div class="form-control">
                 <input
                   type="text"
                   placeholder="+ Add task"
                   class="input input-bordered"
                 />
-                <h1 class=" text-primary font-bold">MY TASKS</h1>
+                <h1 class=" text-primary pt-5 font-bold">MY TASKS</h1>
 
                 <div class="form-control">
                   <label class="label cursor-pointer">
@@ -39,7 +45,18 @@ const Tasks = () => {
                       type="radio"
                       name="radio-6"
                       class="radio checked:bg-blue-500"
-                      checked
+                   
+                      
+                    />
+                    <span  class="label-text">Task</span>
+                    <button class="btn btn-outline btn-primary">Edit</button>
+                  </label>
+                  <label class="label cursor-pointer">
+                    <input
+                      type="radio"
+                      name="radio-6"
+                      class="radio checked:bg-blue-500"
+                      
                     />
                     <span class="label-text">Task</span>
                     <button class="btn btn-outline btn-primary">Edit</button>
@@ -49,7 +66,7 @@ const Tasks = () => {
                       type="radio"
                       name="radio-6"
                       class="radio checked:bg-blue-500"
-                      checked
+                  
                     />
                     <span class="label-text">Task</span>
                     <button class="btn btn-outline btn-primary">Edit</button>
@@ -59,27 +76,7 @@ const Tasks = () => {
                       type="radio"
                       name="radio-6"
                       class="radio checked:bg-blue-500"
-                      checked
-                    />
-                    <span class="label-text">Task</span>
-                    <button class="btn btn-outline btn-primary">Edit</button>
-                  </label>
-                  <label class="label cursor-pointer">
-                    <input
-                      type="radio"
-                      name="radio-6"
-                      class="radio checked:bg-blue-500"
-                      checked
-                    />
-                    <span class="label-text">Task</span>
-                    <button class="btn btn-outline btn-primary">Edit</button>
-                  </label>
-                  <label class="label cursor-pointer">
-                    <input
-                      type="radio"
-                      name="radio-6"
-                      class="radio checked:bg-blue-500"
-                      checked
+                    
                     />
                     <span class="label-text">Task</span>
                     <button class="btn btn-outline btn-primary">Edit</button>
